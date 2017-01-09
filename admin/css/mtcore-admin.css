@@ -1,0 +1,382 @@
+.mtcore-options-wrap #cmo-options-form #post-body #normal-sortables {
+  min-height: 0;
+}
+.mtcore-options-wrap #cmo-options-form {
+  max-width: 99%;
+}
+@media screen and (min-width: 1200px) {
+  .mtcore-options-wrap #cmo-options-form {
+    max-width: 80%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .mtcore-options-wrap #cmo-options-form {
+    max-width: 70%;
+  }
+}
+
+/* Override TinyMCE Shortcode Icon */
+i.mce-i-feedback:before {
+	content: "\f175";
+	font-family: dashicons;
+}
+i.mce-i-networking:before {
+	content: "\f325";
+	font-family: dashicons;
+}
+i.mce-i-editor-table:before {
+	content: "\f535";
+	font-family: dashicons;
+}
+i.mce-i-admin-media:before {
+	content: "\f104";
+	font-family: dashicons;
+}
+i.mce-i-portfolio:before {
+	content: "\f322";
+	font-family: dashicons;
+}
+
+/* Override CMB2 Metabox */
+
+.cmb-th label {
+  font-size: 13px;
+  color: #444;
+  padding: 5px 2px 3px;
+}
+
+.cmb-field-list > .cmb-row.half-row > .cmb-th {
+  float: none;
+  display: block;
+  padding: 0;
+  width: auto;
+}
+
+.postbox-container .cmb2-wrap > .cmb-field-list > .cmb-row.half-row {
+  display: inline-block;
+  width: 50%;
+  border: 0;
+  padding: 0;
+}
+
+.cmb-field-list > .cmb-row.half-row > .cmb-td {
+  display: block;
+  float: none;
+  padding: 0;
+  width: auto;
+}
+
+.cmb-field-list > .cmb-row.half-row > .cmb-td input,
+.cmb-field-list > .cmb-row.half-row > .cmb-td select,
+.cmb-field-list > .cmb-row.half-row > .cmb-td textarea {
+  width: 100%;
+  padding: 5px 8px;
+}
+
+.cmb-field-list > .cmb-row.half-row:nth-child(even) > .cmb-th,
+.cmb-field-list > .cmb-row.half-row:nth-child(even) > .cmb-td {
+  padding-left: 7.5px;
+}
+
+.cmb-field-list > .cmb-row.half-row:nth-child(odd) > .cmb-th,
+.cmb-field-list > .cmb-row.half-row:nth-child(odd) > .cmb-td {
+  padding-right: 7.5px;
+}
+
+.postbox-container .cmb2-wrap > .cmb-field-list {
+  padding: 5px 5px 0;
+}
+
+.postbox-container .cmb2-wrap > .cmb-field-list {
+  margin-bottom: -15px;
+}
+
+/* Override CMB2 Metabox Side Area */
+
+.inner-sidebar .cmb2-wrap > .cmb-field-list > .cmb-row,
+#side-sortables .cmb2-wrap > .cmb-field-list > .cmb-row {
+  padding: 0;
+  border: 0;
+  margin-bottom: 15px;
+}
+
+.inner-sidebar .cmb2-wrap > .cmb-field-list > .cmb-row:last-child,
+#side-sortables .cmb2-wrap > .cmb-field-list > .cmb-row:last-child {
+  margin-bottom: 30px;
+}
+
+.inner-sidebar .cmb-th,
+#side-sortables .cmb-th {
+  padding: 0;
+}
+
+.inner-sidebar .cmb-th label,
+#side-sortables .cmb-th label {
+  font-size: 13px;
+  color: #444;
+  padding: 5px 2px 6px;
+}
+
+.inner-sidebar .cmb-th label:after,
+#side-sortables .cmb-th label:after {
+  border: 0;
+  padding: 0;
+}
+
+.inner-sidebar .cmb-row .cmb2-metabox-description,
+#side-sortables .cmb-row .cmb2-metabox-description {
+  color: #999;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.2em;
+  padding: 6px 0 0;
+}
+
+/* Override Specific CMB2 Metabox Fields */
+
+.inner-sidebar .cmb2-wrap input[type=text]:not(.wp-color-picker),
+#side-sortables .cmb2-wrap input[type=text]:not(.wp-color-picker),
+#side-sortables .cmb2-wrap input[type="email"],
+#side-sortables .cmb2-wrap input[type="url"],
+#side-sortables .cmb2-wrap input[type="number"],
+#side-sortables .cmb2-wrap textarea,
+#side-sortables .cmb2-wrap select {
+  height: auto;
+	width: -webkit-calc(100% - 10px);
+	width: -moz-calc(100% - 10px);
+  width: calc(100% - 10px);
+}
+
+.cmb-type-checkbox span.cmb2-metabox-description {
+  color: #222;
+  font-size: 14px;
+  line-height: 1.4em;
+  font-weight: 400;
+  font-style: normal;
+}
+.cmb-type-group .cmb2-wrap>.cmb-field-list>.cmb-row,
+.postbox-container .cmb2-wrap>.cmb-field-list>.cmb-row {
+  padding: .8em 0 1em;
+}
+.cmb-type-group .fluid-field .cmb-th,
+.postbox-container .fluid-field .cmb-th,
+.cmb-type-group .fluid-field .cmb-th+.cmb-td,
+.postbox-container .fluid-field .cmb-th+.cmb-td {
+  display: block;
+  float: none;
+  width: 98%;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.postbox-container .hidden-parts-fields {
+	display: inline-block;
+	width: -webkit-calc(50% - 15px);
+	width: -moz-calc(50% - 15px);
+  width: calc(50% - 15px);
+	margin: 0 5px;
+	vertical-align: top;
+}
+
+.postbox-container .hidden-parts-fields.hidden {
+	display: none;
+}
+.postbox-container .hidden-parts-fields:nth-child(even) {
+	margin-right: 10px;
+}
+.postbox-container .hidden-parts-fields:nth-child(odd) {
+	margin-left: 10px;
+}
+.postbox-container .hidden-parts-fields:nth-child(odd):after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.postbox-container .hidden-parts-fields .cmb-repeat-group-field {
+	padding: 0;
+}
+.postbox-container .cmb-repeat-group-field .cmb-th,
+.postbox-container .cmb-repeat-group-field .cmb-td {
+	display: block;
+	width: 100%;
+	float: none;
+	padding: 0 10px 5px;
+}
+.postbox-container .cmb-repeat-group-field .cmb-td textarea:not(.wp-editor-area),
+.postbox-container .cmb-repeat-group-field .cmb-td select,
+.postbox-container .cmb-repeat-group-field .cmb-td input.cmb2-text-small,
+.postbox-container .cmb-repeat-group-field .cmb-td input.cmb2-text-medium,
+.postbox-container .cmb-repeat-group-field .cmb-td input[type="text"],
+.postbox-container .cmb-repeat-group-field .cmb-td input[type="url"],
+.postbox-container .cmb-repeat-group-field .cmb-td input[type="number"] {
+  height: auto;
+	width: -webkit-calc(100% - 25px);
+	width: -moz-calc(100% - 25px);
+  width: calc(100% - 25px);
+}
+#side-sortables .cmb2-wrap select,
+.postbox-container .cmb-repeat-group-field .cmb-td select {
+	height: 32px;
+  line-height: 32px;
+  margin-top: 0;
+  padding: 5px 15px 5px 5px;
+	tap-highlight-color: rgba(255, 255, 255, 0);
+	font-size: 1em;
+	background: #fafafa;
+	border: 1px solid #cccccc;
+	color: rgba(0, 0, 0, 0.87);
+	border-radius: 3px;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075) inset;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075) inset;
+	-webkit-transition: color 0.1s ease, border-color 0.1s ease;
+	transition: color 0.1s ease, border-color 0.1s ease;
+}
+#side-sortables .cmb2-wrap input,
+.postbox-container .cmb-repeat-group-field .cmb-td input,
+.postbox-container .cmb-repeat-group-field .cmb-td textarea:not(.wp-editor-area) {
+	margin: 0em;
+	outline: none;
+	-webkit-appearance: none;
+	tap-highlight-color: rgba(255, 255, 255, 0);
+	line-height: 1.2142em;
+	padding: 0.5161429em 0.8em;
+	font-size: 1em;
+	background: #fafafa;
+	border: 1px solid #cccccc;
+	color: rgba(0, 0, 0, 0.87);
+	border-radius: 3px;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075) inset;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075) inset;
+	-webkit-transition: color 0.1s ease, border-color 0.1s ease;
+	transition: color 0.1s ease, border-color 0.1s ease;
+}
+#side-sortables .cmb2-wrap input:focus,
+.postbox-container .cmb-repeat-group-field .cmb-td input:focus,
+.postbox-container .cmb-repeat-group-field .cmb-td textarea:not(.wp-editor-area):focus {
+	color: rgba(0,0,0,.95);
+	border-color: #85B7D9;
+	border-radius: .28571429rem;
+	background: #fff;
+	-webkit-box-shadow: 0 0 0 0 rgba(34,36,38,.35) inset;
+	box-shadow: 0 0 0 0 rgba(34,36,38,.35) inset;
+}
+select.wds-simple-page-builder-template-select {
+	width: auto !important;
+}
+#side-sortables .cmb2-wrap input.cmb2-colorpicker,
+.postbox-container .cmb-repeat-group-field .cmb-td input.cmb2-colorpicker {
+	float: left;
+	width: 80px;
+	line-height: 1;
+	padding: 5px 2px 7px;
+}
+#side-sortables .cmb2-wrap input.cmb2-colorpicker + input,
+.postbox-container .cmb-repeat-group-field .cmb-td input.cmb2-colorpicker + input {
+	width: auto;
+	padding: 5px 10px 12px;
+}
+
+.postbox-container .cmb-repeat-group-field .cmb-td span.cmb2-metabox-description:before {
+	content: "";
+	display: table;
+	clear: both;
+	width: 100%;
+}
+.postbox-container .cmb-repeat-group-field .cmb-td span.cmb2-metabox-description {
+	display: table-cell;
+	padding: 5px 0 0;
+}
+.postbox-container .cmb2-metabox .cmb-type-group {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.postbox-container .cmb2-metabox > .cmb-row .cmb-repeat-table .cmb-row > .cmb-td {
+  padding: 0;
+}
+.cmb2-wrap .cmb-row.cmb-repeat .cmb-td .cmb2-metabox-description {
+  padding-bottom: .8em;
+}
+
+/* Meta Box CMB2 - Link Picker Field */
+.cmb2-wrap .cmb-type-link-picker .cmb-row.cmb-repeat-row {
+	padding-top: 5px;
+	margin-bottom: 5px;
+	position: relative;
+}
+.cmb2-wrap .cmb-type-link-picker .cmb-row.cmb-repeat-row > .cmb-td.cmb-remove-row {
+	display: inline-block;
+	position: absolute;
+	bottom: 10px;
+	right: 0;
+	width: auto;
+	z-index: 2;
+}
+ .cmb2-wrap .cmb-type-link-picker .cmb-add-row {
+   margin: 5px 0 0;
+ }
+.link-picker {
+	box-sizing: border-box;
+}
+.link-picker > div {
+	float: left;
+	text-align: center;
+	width: 100%;
+	position: relative;
+	box-sizing: border-box;
+	padding: 5px;
+}
+.link-picker > div:first-child {
+	padding-left: 0;
+}
+.link-picker > div > p {
+  margin: 0;
+}
+.link-picker label {
+	/*font-size: 90%;
+	color: #aaa;*/
+}
+.link-picker .button {
+	width: 35px;
+	text-align: center;
+	margin-top: 2px;
+}
+.link-picker .label-title, .link-picker .text {
+	width: 35%;
+	text-align: left;
+}
+.link-picker .label-url, .link-picker .url {
+	width: 30%;
+	text-align: left;
+}
+.link-picker .label-blank, .link-picker .blank {
+	width: 25%;
+	text-align: left;
+}
+.link-picker .label-choose, .link-picker .choose {
+	width: 10%;
+	text-align: left;
+}
+.link-picker div label {
+	display: block;
+}
+
+.link-picker input[type=text],
+.link-picker input[type=url],
+.link-picker select {
+	width: 100% !important;
+}
+
+.link-picker select {
+	height: 32px !important;
+	font-size:14px !important;
+	margin-top: 1px !important;
+}
+
+@media only screen and (max-width: 767px) {
+	.link-picker .label-title, .link-picker .text,
+	.link-picker .label-url, .link-picker .url,
+	.link-picker .label-blank, .link-picker .blank,
+	.link-picker .label-choose, .link-picker .choose {
+		width: 50%;
+	}
+}
